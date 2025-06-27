@@ -1010,6 +1010,7 @@ body {
   max-width: 150px;
   max-height: 150;
   border-radius: 75px;
+  transition: all 0.2s linear;
 }
 .swiper .user-img:hover {
   border: 5px solid var(--yellowgreen);
@@ -1300,5 +1301,8 @@ body {
   .nav-list::-webkit-scrollbar{
     display: none;
   }
-  
+  .intro-one .next-btn{
+    top: -20px;
+    right: -20px;
+  }
 }
