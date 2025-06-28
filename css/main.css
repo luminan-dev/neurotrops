@@ -720,14 +720,16 @@ body {
   width: 100%;
   height: 400px;
   z-index: -1;
-  
+}
+.mushrooms .box1{
+  transition: all 0.3s linear;
 }
 .mushrooms .container {
   padding-block: 40px 137px;
   overflow: hidden;
   margin-inline: auto;
 }
-.mushrooms .box::after {
+.mushrooms .box1::after {
   content: "";
   position: absolute;
   top: 0;
@@ -735,7 +737,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: .2;
+  opacity: 0;
   z-index: 2;
 }
 .mushrooms .container .title {
@@ -759,8 +761,10 @@ body {
 }
 .mushrooms .box1:hover .mushroom-sec-bg1 {
   scale: 1.1;
-  opacity: 0.9;
   transition: all 0.3s linear;
+}
+.mushrooms .box1:hover .box1::after {
+  opacity: .25;
 }
 .mushrooms .box1:hover .content-box {
   opacity: 1;
