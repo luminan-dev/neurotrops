@@ -764,7 +764,8 @@ body {
   transition: all 0.3s linear;
 }
 .mushrooms .box1:hover .box1::after {
-  opacity: .25;
+  opacity: .5;
+  z-index: 2;
 }
 .mushrooms .box1:hover .content-box {
   opacity: 1;
@@ -809,6 +810,10 @@ body {
   scale: 1.1;
   opacity: 0.9;
   transition: all 0.3s linear;
+}
+.mushrooms .box1:hover .box1::after{
+  opacity: .5;
+  z-index: 2;
 }
 .mushrooms .box2:hover .content-box {
   opacity: 1;
