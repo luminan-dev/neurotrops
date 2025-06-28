@@ -219,7 +219,6 @@ body {
   padding-top: 124px;
   height: 100vh;
   background: linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
-  position: relative;
 }
 .line{
   position: absolute;
@@ -256,6 +255,28 @@ body {
 }
 .intro-one .container {
   z-index: 2;
+  position: relative;
+}
+.line{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.light-main{
+  position: absolute;
+  top: 29px;
+  right: 312px;
+  z-index: 1;
+  opacity: .4;
+
+}
+.light-green{
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  z-index: 1;
+  opacity: .75;
 }
 .intro-one .nav-list {
   display: flex;
