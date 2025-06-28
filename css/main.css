@@ -221,12 +221,6 @@ body {
   background: linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
   position: relative;
 }
-.line{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
 .intro-one::after {
   content: "";
   width: 100%;
@@ -245,7 +239,7 @@ body {
 }
 .light-main{
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 312px;
   z-index: 1;
   opacity: .4;
@@ -253,7 +247,7 @@ body {
 .light-green{
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 20px;
   z-index: 1;
   opacity: .75;
 }
@@ -474,6 +468,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
 }
 .to-basket {
   position: absolute;
@@ -481,8 +476,8 @@ body {
   opacity: 0;
   transition: all 0.2s linear;
 }
-.to-basket:hover {
-  opacity: 100%;
+.cart-item .img-box:hover .to-basket {
+  opacity: 1;
 }
 .cart-item .img-box .cart-product {
   width: 100%;
@@ -731,6 +726,17 @@ body {
   padding-block: 40px 137px;
   overflow: hidden;
   margin-inline: auto;
+}
+.mushrooms .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .2;
+  z-index: 2;
 }
 .mushrooms .container .title {
   font-family: "TT Autonomous Trl";
