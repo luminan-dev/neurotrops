@@ -219,27 +219,13 @@ body {
   padding-top: 124px;
   height: 100vh;
   background: linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
+  position: relative;
 }
 .line{
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 1;
-}
-.light-main{
-  position: absolute;
-  top: 327px;
-  left: 1012px;
-  z-index: 1;
-  opacity: .4;
-
-}
-.light-green{
-  position: absolute;
-  top: 238px;
-  right: 280px;
-  z-index: 1;
-  opacity: .75;
 }
 .intro-one::after {
   content: "";
@@ -257,24 +243,17 @@ body {
   z-index: 2;
   position: relative;
 }
-.line{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
 .light-main{
   position: absolute;
-  top: 29px;
+  top: 80px;
   right: 312px;
   z-index: 1;
   opacity: .4;
-
 }
 .light-green{
   position: absolute;
-  top: -60px;
-  right: -60px;
+  top: 0px;
+  right: 0px;
   z-index: 1;
   opacity: .75;
 }
